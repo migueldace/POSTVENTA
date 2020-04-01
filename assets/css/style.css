@@ -1,0 +1,254 @@
+/*================================================================================
+  Item Name: Stack - Responsive Admin Theme
+  Version: 1.0
+  Author: PIXINVENT
+  Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/* ================================================================================ */
+
+/* nav superior cambia a un color oscuro y texto claro en pantallas pequeñas */
+
+@media screen and (max-width: 768px) {
+    .header-navbar .navbar-header .navbar-brand {
+        /*left: 30%;*/
+    }
+    #nav-superior {
+        background: #404E67 !important;
+    }
+    .nav-link {
+        color: white !important;
+    }
+}
+/* por defecto en datatable viene como display block, lo cual hace que no sea responsivo */
+
+@media (max-width: 991.98px) {
+    .dataTables_wrapper table {
+        /*display: inline-table;*/
+    }
+}
+/* Color al pasar por encima de items de menús */
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #00B5B8;
+    color: white !important;
+}
+/* Sombreado para el div menu, sin borde*/
+
+.dropdown-menu {
+    padding: 0rem 0;
+    border: none !important;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.50) !important;
+}
+.with-arrow {
+    position: absolute;
+    height: 10px;
+    overflow: hidden;
+    width: 40px;
+    top: -10px;
+    right: 0px;
+}
+.with-arrow>span {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 10px;
+    left: auto;
+    position: absolute;
+    content: "";
+    -moz-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.card-header {
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem !important;
+    padding-left: 1.5rem;
+}
+.card-body {
+    padding-top: 1rem !important;
+}
+.circle-usuario {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    padding: 50% 0;
+    line-height: 0;
+    position: relative;
+}
+#btn-scroll {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #343a40db;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    /**/
+}
+#btn-scroll:hover {
+    background-color: #8c1c40;
+    /* color morado Malpo*/
+}
+/* Mostrar siempre el nombre del usuario, independiente del tamaño de pantalla*/
+
+.header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
+    display: inline-block !important;
+}
+/* Fondos de colores Degradados */
+
+.bg-grad-primary, .progress-bar-grad-primary {
+    background: #00acf0;
+    background: linear-gradient(45deg, #00acf0, #6640b2) !important;
+    background: -webkit-bg-linear-gradient(45deg, #00acf0, #6640b2) !important;
+}
+.bg-grad-info, .progress-bar-grad-info {
+    background: #1ebccd;
+    background: linear-gradient(45deg, #1ebccd, #3a55b1) !important;
+    background: -webkit-bg-linear-gradient(45deg, #1ebccd, #3a55b1) !important;
+}
+.bg-grad-success, .progress-bar-grad-success {
+    background: #22af47;
+    background: linear-gradient(45deg, #22af47, #d0d962) !important;
+    background: -webkit-bg-linear-gradient(45deg, #22af47, #d0d962) !important;
+}
+.bg-grad-warning, .progress-bar-grad-warning {
+    background: #ffbf36;
+    background: linear-gradient(45deg, #ffbf36, #ff6028) !important;
+    background: -webkit-bg-linear-gradient(45deg, #ffbf36, #ff6028) !important;
+}
+.bg-grad-danger, .progress-bar-grad-danger {
+    background: #f83f37;
+    background: linear-gradient(45deg, #f83f37, #ab26aa) !important;
+    background: -webkit-bg-linear-gradient(45deg, #f83f37, #ab26aa) !important;
+}
+.bg-grad-secondary {
+    background: #727272;
+    background: linear-gradient(45deg, #727272, #5e7d8a) !important;
+    background: -webkit-bg-linear-gradient(45deg, #727272, #5e7d8a) !important;
+}
+.bg-grad-light {
+    background: #f5f5f6;
+    background: linear-gradient(45deg, #f5f5f6, #eaecec) !important;
+    background: -webkit-bg-linear-gradient(45deg, #f5f5f6, #eaecec) !important;
+}
+.bg-grad-dark {
+    background: #324148;
+    background: linear-gradient(45deg, #324148, #7a5449) !important;
+    background: -webkit-bg-linear-gradient(45deg, #324148, #7a5449) !important;
+}
+.bg-grad-pony {
+    background: #ed1b60;
+    background: linear-gradient(45deg, #ed1b60, #1ebccd) !important;
+    background: -webkit-bg-linear-gradient(45deg, #ed1b60, #1ebccd) !important;
+}
+.bg-grad-space {
+    background: #ab26aa;
+    background: linear-gradient(45deg, #ab26aa, #fde335) !important;
+    background: -webkit-bg-linear-gradient(45deg, #ab26aa, #fde335) !important;
+}
+.bg-grad-streaks {
+    background: #6640b2;
+    background: linear-gradient(45deg, #6640b2, #009b84) !important;
+    background: -webkit-bg-linear-gradient(45deg, #6640b2, #009b84) !important;
+}
+.bg-grad-bunting {
+    background: #3a55b1;
+    background: linear-gradient(45deg, #3a55b1, #7a5449) !important;
+    background: -webkit-bg-linear-gradient(45deg, #3a55b1, #7a5449) !important;
+}
+.bg-grad-paradise {
+    background: #0092ee;
+    background: linear-gradient(45deg, #0092ee, #88c241) !important;
+    background: -webkit-bg-linear-gradient(45deg, #0092ee, #88c241) !important;
+}
+.bg-grad-heaven {
+    background: #88c241;
+    background: linear-gradient(45deg, #88c241, #00acf0) !important;
+    background: -webkit-bg-linear-gradient(45deg, #88c241, #00acf0) !important;
+}
+.bg-grad-honey {
+    background: #d0d962;
+    background: linear-gradient(45deg, #d0d962, #ff9528) !important;
+    background: -webkit-bg-linear-gradient(45deg, #d0d962, #ff9528) !important;
+}
+.bg-grad-warbler {
+    background: #fde335;
+    background: linear-gradient(45deg, #fde335, #727272) !important;
+    background: -webkit-bg-linear-gradient(45deg, #fde335, #727272) !important;
+}
+.bg-grad-dusk {
+    background: #ff9528;
+    background: linear-gradient(45deg, #ff9528, #6640b2) !important;
+    background: -webkit-bg-linear-gradient(45deg, #ff9528, #6640b2) !important;
+}
+.bg-grad-citrine {
+    background: #ff6028;
+    background: linear-gradient(45deg, #ff6028, #7a5449) !important;
+    background: -webkit-bg-linear-gradient(45deg, #ff6028, #7a5449) !important;
+}
+.bg-grad-royston {
+    background: #7a5449;
+    background: linear-gradient(45deg, #7a5449, #009b84) !important;
+    background: -webkit-bg-linear-gradient(45deg, #7a5449, #009b84) !important;
+}
+.bg-grad-ashes {
+    background: #5e7d8a;
+    background: linear-gradient(45deg, #5e7d8a, #324148) !important;
+    background: -webkit-bg-linear-gradient(45deg, #5e7d8a, #324148) !important;
+}
+.bg-grad-metal {
+    background: #c1993f;
+    background: linear-gradient(45deg, #c1993f, #727272) !important;
+    background: -webkit-bg-linear-gradient(45deg, #c1993f, #727272) !important;
+}
+.bg-grad-sunset {
+    background: #009b84;
+    background: linear-gradient(45deg, #009b84, #ff6028) !important;
+    background: -webkit-bg-linear-gradient(45deg, #009b84, #ff6028) !important;
+}
+/* ESTILO BOTÓN MOSTRAR U OCULTAR LAS COLUMNAS DE DATATABLE */
+
+div.dt-button-collection {
+    position: relative !important;
+    margin-top: auto !important;
+}
+button.dt-button, div.dt-button, a.dt-button {
+    border: none !important;
+    color: #f3eded !important;
+    background-color: #2A2E30 !important;
+    background-image: none !important;
+}
+/* ESTILO BOTÓN MOSTRAR U OCULTAR LAS COLUMNAS DE DATATABLE */
+
+/* ESTILO TD DE LAS TABLAS */
+
+td {
+    /*max-width: 200px;*/
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* ESTILO TD DE LAS TABLAS */

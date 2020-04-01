@@ -1,0 +1,95 @@
+body,html {
+  height: 80%;
+}
+.card-subtitle{
+  margin: 0 !important;
+}
+
+
+/* Video y Login transparente */
+.card, .card-header {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card-footer{
+  border-top: transparent;
+  background-color: transparent;
+}
+
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+form .form-control{
+  background-color: #090e0e91; /* #2e4a4aa3 más celeste*/
+  color: white;
+  text-align: center; 
+}
+
+form .form-control:focus{
+  background-color: #090e0ee0; /*#090e0e91 */
+  color: #21fbff;/* color: #3f587e !important; color oscuro, si el fondo queda blanco */
+}
+
+.icono-input{
+  color: #21fbff;
+}
+
+form .form-control::-webkit-input-placeholder {
+  color: gray; }
+form .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: gray; }
+form .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: gray; }
+form .form-control:-ms-input-placeholder {
+  color: gray; }
+
+/* texto del input centrado */
+.has-icon-left .form-control {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-primary{
+  background-color: #0c9c9eb8 !important;
+}
+
+/* Keep the width to 100% and scale the height */
+@media (min-aspect-ratio: 16/9) {
+  #myVideo {
+    width:100%;
+    height: auto;
+  }
+}
+
+/* And we’ll do it vice versa when the screen ratio is below 16/9 */
+@media (max-aspect-ratio: 16/9) {
+  #myVideo { 
+    width:auto;
+    height: 100%;
+  }
+}
+
+/* No muestra el video en celulares, por el costo de datos */
+@media (max-width: 767px) {
+  #myVideo {
+    display: none;
+  }
+
+  body {
+    background: url('https://www.innovamalpo.cl/master_login/assets/img/maiten.jpg') !important;
+    background-size: cover;
+  }     
+  
+  .innova-logo{
+    width: 100%;
+  }   
+
+}
